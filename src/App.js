@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {Profile} from "./Component/Profile";
+import { Login } from './Component/Login';
+import { ChangeColor } from './Component/ChangeColor';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <h1>this is redux project</h1>
+   <Profile/>
+   <Login/>
+   <ChangeColor/>
     </div>
   );
 }
 
 export default App;
+
+// commands to install redux libray
+//npx create-react-app my-project
+//npm install redux react-redux @reduxjs/toolkit
+
